@@ -1,4 +1,5 @@
 Garden.destroy_all
+Plant.destroy_all
 
 garden_names = [
   "French garden",
@@ -24,6 +25,5 @@ garden_names.each do |garden_name|
     )
     plant.garden = garden
     plant.save!
-    sleep(2)
   end
 end
